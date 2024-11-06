@@ -27,13 +27,18 @@ protected:
 private:
 	TextureShader* textureShader;
 	PlaneMesh* mesh;
-
+	CubeMesh* cubeMesh;
+	SphereMesh* sphereMesh;
+	OrthoMesh* orthoMesh;
 	Light* light;
 	AModel* model;
 	ShadowShader* shadowShader;
 	DepthShader* depthShader;
 
 	ShadowMap* shadowMap;
+
+	float LightDir[3] = { 0.0f, -0.7f, 0.7f };
+	float LightPos[3] = { 0.f, 0.f, -10.f };
 };
 
 #endif
